@@ -13,11 +13,9 @@ BOOL IsBigEndian() {
 }
 
 int main(int argc, char *argv[]) {
-  printf("%d", IsBigEndian());
-  char ch1;
-  printf("please input a number\r\n");
-  scanf("%d", &ch1);
-  printf("sizeof%d\r\n", sizeof(ch1));
-  printf("%c\r\n", ch1);
+  int ch1 = 0;
+  scanf("%c", &ch1);
+  printf("%c\r\n", &ch1);
+  printf("%d\r\n", ch1);
   return 0;
 }
